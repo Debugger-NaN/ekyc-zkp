@@ -1,5 +1,4 @@
 # 🛡️ Privacy-Preserving Selectively Disclosed eKYC System
-<<<<<<< HEAD
 ### *Zero-Knowledge Proofs (zk-SNARKs) + Merkle Trees + Post-Quantum Signatures + On-Device Biometrics*
 
 > **Based on the research paper:** *"A Privacy-Preserving Selectively Disclosed eKYC System Using Merkle Tree and Zero-Knowledge Proofs"* (Ahmed et al., APCC 2025), extended with **Production v2 Enterprise Features**: Post-Quantum Hybrid Cryptography (ML-DSA-65), In-Browser AI/OCR & Biometric Liveness Detection, Tri-Registry Government Validation (UIDAI / MEA / NSDL), and zk-AML Sanctions Screening.
