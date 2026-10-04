@@ -131,13 +131,13 @@ flowchart TD
         SanctionsDB["zk-AML OFAC / PEP Sanctions SMT"]
     end
 
-    Gov -->|Verifies Document| Registry
-    HOLDER -->|1. Sends holderCommit = Poseidon(secret)| ISSUER
-    ISSUER -->|2. Issues Signed Credential Package| BrowserVault
-    VERIFIER -->|3. Issues Session Challenge (nonce, minAge, today)| HOLDER
-    HOLDER -->|4. Generates Groth16 Proof locally| WasmProver
-    WasmProver -->|5. Sends ZK Proof + Public Signals| Gateway
-    Gateway -->|6. Validates & Records Nullifier| Blockchain
+    Gov -->|"Verifies Document"| Registry
+    HOLDER -->|"1. Sends holderCommit = Poseidon(secret)"| ISSUER
+    ISSUER -->|"2. Issues Signed Credential Package"| BrowserVault
+    VERIFIER -->|"3. Issues Session Challenge (nonce, minAge, today)"| HOLDER
+    HOLDER -->|"4. Generates Groth16 Proof locally"| WasmProver
+    WasmProver -->|"5. Sends ZK Proof + Public Signals"| Gateway
+    Gateway -->|"6. Validates & Records Nullifier"| Blockchain
 ```
 
 1. **The Issuer** (UIDAI, Ministry of External Affairs, Passport Office, University):
