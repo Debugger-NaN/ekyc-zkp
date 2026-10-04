@@ -1,0 +1,19 @@
+{
+  "sanctions": [
+    {
+      "name": "VLADIMIR ILLYICH",
+      "dob": 19700101,
+      "reason": "OFAC SDN Test Entry #1"
+    },
+    {
+      "name": "JOHN CORRUPTUS",
+      "dob": 19650315,
+      "reason": "PEP Bribery Watchlist"
+    },
+    {
+      "name": "ANONYMOUS FRAUDSTER",
+      "dob": 19821130,
+      "reason": "Interpol Red Notice Mock"
+    }
+  ]
+}

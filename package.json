@@ -1,0 +1,28 @@
+{
+  "name": "ekyc-zkp",
+  "version": "1.0.0",
+  "description": "Privacy-preserving selectively disclosed eKYC: Poseidon Merkle tree + Groth16 zk-SNARK",
+  "scripts": {
+    "start": "node gateway/server.js",
+    "test": "node test/registry.test.js && node test/aml.test.js && node test/e2e.js",
+    "issue": "node scripts/issuer.js",
+    "holder": "node scripts/holder.js",
+    "verifier": "node scripts/verifier.js",
+    "ceremony:verify": "bash scripts/ceremony/verify_all.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@noble/post-quantum": "^0.7.1",
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "pdfjs-dist": "^6.3.289",
+    "snarkjs": "^0.7.6",
+    "solc": "^0.8.24",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
+}

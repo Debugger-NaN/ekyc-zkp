@@ -1,0 +1,6 @@
+{
+  "idColumn": "CUST_ID",
+  "dobColumn": "BIRTH_DT",
+  "dobYearSlice": [0, 4],
+  "columns": { "name": "FULL_NAME", "nationality": "CTRY", "nid": "NAT_ID", "address": "ADDR_LINE1", "university": "SCHOOL" }
+}

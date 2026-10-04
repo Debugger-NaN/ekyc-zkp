@@ -1,0 +1,255 @@
+{
+  "aadhaar": [
+    {
+      "uid": "485487689665",
+      "name": "Karan Singh Negi",
+      "dob": 20051125,
+      "gender": "M",
+      "address": "S/O: Dinkar Negi, friends colony, talli haldwani, Haldwani, Nainital, Uttarakhand - 263139",
+      "pin": "263139",
+      "status": "ACTIVE"
+    },
+    {
+      "uid": "123456789012",
+      "name": "Aarav Sharma",
+      "dob": 19950815,
+      "gender": "M",
+      "address": "Flat 102, Shanti Vihar, New Delhi - 110001",
+      "pin": "110001",
+      "status": "ACTIVE"
+    },
+    {
+      "uid": "522266887818",
+      "name": "Suryansh Sapehia",
+      "dob": 20040510,
+      "gender": "M",
+      "address": "Himachal Pradesh, India",
+      "pin": "171001",
+      "status": "ACTIVE"
+    },
+    {
+      "uid": "987654321098",
+      "name": "Priya Patel",
+      "dob": 19980412,
+      "gender": "F",
+      "address": "Ahmedabad, Gujarat - 380001",
+      "pin": "380001",
+      "status": "ACTIVE"
+    },
+    {
+      "uid": "554433221100",
+      "name": "Vikram Malhotra",
+      "dob": 19921103,
+      "gender": "M",
+      "address": "Mumbai, Maharashtra - 400001",
+      "pin": "400001",
+      "status": "ACTIVE"
+    },
+    {
+      "uid": "998877665544",
+      "name": "Ananya Iyer",
+      "dob": 20010319,
+      "gender": "F",
+      "address": "Chennai, Tamil Nadu - 600001",
+      "pin": "600001",
+      "status": "ACTIVE"
+    },
+    {
+      "uid": "334455667788",
+      "name": "Rohan Verma",
+      "dob": 19960722,
+      "gender": "M",
+      "address": "Bengaluru, Karnataka - 560001",
+      "pin": "560001",
+      "status": "ACTIVE"
+    },
+    {
+      "uid": "888877776666",
+      "name": "Test Dynamic Citizen",
+      "dob": 19991231,
+      "gender": "M",
+      "address": "Shimla, HP, India",
+      "status": "ACTIVE"
+    },
+    {
+      "uid": "439179603795",
+      "name": "Anshika Mawri",
+      "dob": 20000101,
+      "gender": "M",
+      "address": "0",
+      "status": "ACTIVE"
+    }
+  ],
+  "passports": [
+    {
+      "passportNumber": "AS456127",
+      "name": "Karan Singh Negi",
+      "givenNames": "KARAN SINGH",
+      "surname": "NEGI",
+      "dob": 20051125,
+      "expiry": 20360629,
+      "nationality": "IND",
+      "sex": "M",
+      "placeOfIssue": "DEHRADUN",
+      "address": "SIMAYAL RAIKWAL,UTTARAKHAND",
+      "status": "ACTIVE"
+    },
+    {
+      "passportNumber": "SP881234",
+      "name": "Suryansh Sapehia",
+      "givenNames": "SURYANSH",
+      "surname": "SAPEHIA",
+      "dob": 20040510,
+      "expiry": 20340510,
+      "nationality": "IND",
+      "sex": "M",
+      "placeOfIssue": "SHIMLA",
+      "address": "Himachal Pradesh, India",
+      "status": "ACTIVE"
+    },
+    {
+      "passportNumber": "P1234567",
+      "name": "Aarav Sharma",
+      "givenNames": "AARAV",
+      "surname": "SHARMA",
+      "dob": 19950815,
+      "expiry": 20320101,
+      "nationality": "IND",
+      "sex": "M",
+      "placeOfIssue": "NEW DELHI",
+      "address": "Flat 102, Shanti Vihar, New Delhi - 110001",
+      "status": "ACTIVE"
+    },
+    {
+      "passportNumber": "J1234567",
+      "name": "Priya Patel",
+      "givenNames": "PRIYA",
+      "surname": "PATEL",
+      "dob": 19980412,
+      "expiry": 20340515,
+      "nationality": "IND",
+      "sex": "F",
+      "placeOfIssue": "AHMEDABAD",
+      "address": "Ahmedabad, Gujarat - 380001",
+      "status": "ACTIVE"
+    },
+    {
+      "passportNumber": "K9876543",
+      "name": "Vikram Malhotra",
+      "givenNames": "VIKRAM",
+      "surname": "MALHOTRA",
+      "dob": 19921103,
+      "expiry": 20330920,
+      "nationality": "IND",
+      "sex": "M",
+      "placeOfIssue": "MUMBAI",
+      "address": "Mumbai, Maharashtra - 400001",
+      "status": "ACTIVE"
+    },
+    {
+      "passportNumber": "I3456789",
+      "name": "Ananya Iyer",
+      "givenNames": "ANANYA",
+      "surname": "IYER",
+      "dob": 20010319,
+      "expiry": 20351110,
+      "nationality": "IND",
+      "sex": "F",
+      "placeOfIssue": "CHENNAI",
+      "address": "Chennai, Tamil Nadu - 600001",
+      "status": "ACTIVE"
+    },
+    {
+      "passportNumber": "R4567890",
+      "name": "Rohan Verma",
+      "givenNames": "ROHAN",
+      "surname": "VERMA",
+      "dob": 19960722,
+      "expiry": 20320818,
+      "nationality": "IND",
+      "sex": "M",
+      "placeOfIssue": "BENGALURU",
+      "address": "Bengaluru, Karnataka - 560001",
+      "status": "ACTIVE"
+    },
+    {
+      "passportNumber": "N1",
+      "name": "Ahmed",
+      "givenNames": "AHMED",
+      "surname": "",
+      "dob": 19890826,
+      "expiry": 20301231,
+      "nationality": "Japan",
+      "sex": "M",
+      "placeOfIssue": "OSAKA",
+      "address": "Osaka Metropolitan University",
+      "status": "ACTIVE"
+    }
+  ],
+  "pan": [
+    {
+      "panNumber": "NEGPK1234N",
+      "name": "Karan Singh Negi",
+      "dob": 20051125,
+      "gender": "M",
+      "address": "friends colony, talli haldwani, Haldwani, Nainital, Uttarakhand - 263139",
+      "status": "ACTIVE"
+    },
+    {
+      "panNumber": "SAPPK5678S",
+      "name": "Suryansh Sapehia",
+      "dob": 20040510,
+      "gender": "M",
+      "address": "Himachal Pradesh, India",
+      "status": "ACTIVE"
+    },
+    {
+      "panNumber": "SHRPK9012S",
+      "name": "Aarav Sharma",
+      "dob": 19950815,
+      "gender": "M",
+      "address": "New Delhi - 110001",
+      "status": "ACTIVE"
+    },
+    {
+      "panNumber": "PATPP4567P",
+      "name": "Priya Patel",
+      "dob": 19980412,
+      "gender": "F",
+      "address": "Ahmedabad, Gujarat - 380001",
+      "status": "ACTIVE"
+    },
+    {
+      "panNumber": "MALPV8910M",
+      "name": "Vikram Malhotra",
+      "dob": 19921103,
+      "gender": "M",
+      "address": "Mumbai, Maharashtra - 400001",
+      "status": "ACTIVE"
+    },
+    {
+      "panNumber": "IYERA1234I",
+      "name": "Ananya Iyer",
+      "dob": 20010319,
+      "gender": "F",
+      "address": "Chennai, Tamil Nadu - 600001",
+      "status": "ACTIVE"
+    },
+    {
+      "panNumber": "VERPR2345V",
+      "name": "Rohan Verma",
+      "dob": 19960722,
+      "gender": "M",
+      "address": "Bengaluru, Karnataka - 560001",
+      "status": "ACTIVE"
+    },
+    {
+      "panNumber": "DGKPN6204G",
+      "name": "Karan Singh Negi",
+      "dob": 20051125,
+      "gender": "M",
+      "address": "0",
+      "status": "ACTIVE"
+    }
+  ]
+}

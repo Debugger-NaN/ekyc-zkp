@@ -1,0 +1,4 @@
+CUST_ID,FULL_NAME,BIRTH_DT,CTRY,NAT_ID,ADDR_LINE1,SCHOOL
+C1001,Ahmed,19890826,Japan,NP842000111,1-1 Gakuen-cho Sakai,Osaka Metropolitan University
+C1002,Yuki Tanaka,20100315,Japan,NP842000222,2-3 Naka-ku Osaka,Osaka Metropolitan University
+C1003,Priya Nair,19950701,India,NP842000333,5 MG Road Pune,Pune University
