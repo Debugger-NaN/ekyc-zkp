@@ -808,4 +808,4 @@ If you use this system or build upon its architecture in academic research or co
 
 ## 📄 License
 
-This project is open-source software licensed under the **ISC License**. Smart contracts are licensed under **GPL-3.0**.
+This project is open-source software.
