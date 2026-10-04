@@ -164,46 +164,32 @@ The following sequence diagram details the full cryptographic lifecycle:
 
 ```mermaid
 sequenceDiagram
-    autonumber
-    actor User as Citizen / Holder
-    participant Wallet as Client-Side Wallet (Browser)
-    participant Issuer as Issuing Authority
-    participant Gateway as Verifier Gateway
-    participant Contract as EKYCRegistry.sol
-
-    Note over User, Wallet: STEP 1: Client Setup & Document Parsing
-    User->>Wallet: Unlock Wallet (Passphrase -> PBKDF2 -> AES-256-GCM)
-    Wallet->>Wallet: Generate holderSecret = RandomBytes(31)
-    Wallet->>Wallet: Compute holderCommit = Poseidon(holderSecret)
-    User->>Wallet: Upload Aadhaar / Passport / PAN Card
-    Wallet->>Wallet: In-Browser OCR & Checksum Check (Verhoeff / ICAO 9303)
-
-    Note over Wallet, Issuer: STEP 2: Institutional Issuance
-    Wallet->>Issuer: Request Issuance (attributes + holderCommit)
-    Issuer->>Issuer: Verify UIDAI / MEA / NSDL Government Registry
-    Issuer->>Issuer: Build Depth-4 Merkle Tree (9 salted leaves + 7 padding)
-    Issuer->>Issuer: Sign Root with EdDSA-Poseidon + ML-DSA-65
-    Issuer-->>Wallet: Return Credential JSON (Leaves, Salts, Paths, Signatures)
-    Wallet->>Wallet: Verify ML-DSA-65 signature on Root
-    Wallet->>Wallet: Encrypt and store in local IndexedDB/LocalStorage
-
-    Note over Wallet, Gateway: STEP 3: Verification Challenge
-    Gateway->>Wallet: GET /api/kyc/challenge (nonce, minAge=18, today, verifierId, revocationRoot)
-    Wallet->>Gateway: GET /api/revocation/:credId (Fetch SMT Non-Membership Proof)
-    Wallet->>Gateway: GET /api/kyc/sanctions/proof/:identityKey (Fetch AML SMT Proof)
-
-    Note over User, Wallet: STEP 4: On-Device Biometrics & Consent
-    Wallet->>Wallet: WebCam Anti-Spoofing Liveness & Face Match Check
-    Wallet->>User: Display Consent Dialog (Reveals Name+Uni; Proves Age>=18; Hides DOB+NID)
-    User->>Wallet: Approve Presentation
-
-    Note over Wallet, Gateway: STEP 5: Zero-Knowledge Proving & Verification
-    Wallet->>Wallet: Compute Groth16 Witness & Proof via snarkjs WASM
-    Wallet->>Gateway: POST /api/kyc/verify (proof, 10 public signals, amlProof)
-    Gateway->>Gateway: Run 8-Point Cryptographic Check
-    Gateway->>Gateway: Check Nullifier uniqueness
-    Gateway->>Contract: Optional: verifyCredentialProof() on Ethereum EVM
-    Gateway-->>Wallet: Return { verified: true, claims: { minAgeProven: 18 } }
+ Wallet->>Wallet: Compute holderCommit = Poseidon(holderSecret)
+ User->>Wallet: Upload Aadhaar / Passport / PAN Card
+ Wallet->>Wallet: In-Browser OCR & Checksum Check (Verhoeff / ICAO 9303)
+ Note over Wallet, Issuer: STEP 2: Institutional Issuance
+ Wallet->>Issuer: Request Issuance (attributes + holderCommit)
+ Issuer->>Issuer: Verify UIDAI / MEA / NSDL Government Registry
+ Issuer->>Issuer: Build Depth-4 Merkle Tree (9 salted leaves + 7 padding)
+ Issuer->>Issuer: Sign Root with EdDSA-Poseidon + ML-DSA-65
+ Issuer-->>Wallet: Return Credential JSON (Leaves, Salts, Paths, Signatures)
+ Wallet->>Wallet: Verify ML-DSA-65 signature on Root
+ Wallet->>Wallet: Encrypt and store in local IndexedDB/LocalStorage
+ Note over Wallet, Gateway: STEP 3: Verification Challenge
+ Gateway->>Wallet: GET /api/kyc/challenge (nonce, minAge=18, today, verifierId, revocationRoot)
+ Wallet->>Gateway: GET /api/revocation/:credId (Fetch SMT Non-Membership Proof)
+ Wallet->>Gateway: GET /api/kyc/sanctions/proof/:identityKey (Fetch AML SMT Proof)
+ Note over User, Wallet: STEP 4: On-Device Biometrics & Consent
+ Wallet->>Wallet: WebCam Anti-Spoofing Liveness & Face Match Check
+ Wallet->>User: Display Consent Dialog (Reveals Name+Uni; Proves Age>=18#59; Hides DOB+NID)
+ User->>Wallet: Approve Presentation
+ Note over Wallet, Gateway: STEP 5: Zero-Knowledge Proving & Verification
+ Wallet->>Wallet: Compute Groth16 Witness & Proof via snarkjs WASM
+ Wallet->>Gateway: POST /api/kyc/verify (proof, 10 public signals, amlProof)
+ Gateway->>Gateway: Run 8-Point Cryptographic Check
+ Gateway->>Gateway: Check Nullifier uniqueness
+ Gateway->>Contract: Optional: verifyCredentialProof() on Ethereum EVM
+ Gateway-->>Wallet: Return { verified: true, claims: { minAgeProven: 18 } }
 ```
 
 ---
