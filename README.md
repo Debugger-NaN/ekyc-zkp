@@ -1,4 +1,5 @@
 # 🛡️ Privacy-Preserving Selectively Disclosed eKYC System
+<<<<<<< HEAD
 ### *Zero-Knowledge Proofs (zk-SNARKs) + Merkle Trees + Post-Quantum Signatures + On-Device Biometrics*
 
 > **Based on the research paper:** *"A Privacy-Preserving Selectively Disclosed eKYC System Using Merkle Tree and Zero-Knowledge Proofs"* (Ahmed et al., APCC 2025), extended with **Production v2 Enterprise Features**: Post-Quantum Hybrid Cryptography (ML-DSA-65), In-Browser AI/OCR & Biometric Liveness Detection, Tri-Registry Government Validation (UIDAI / MEA / NSDL), and zk-AML Sanctions Screening.
@@ -744,6 +745,8 @@ sequenceDiagram
 * **Defense**: The proof includes a public `nonce` and `verifierId`. The derived nullifier $\text{Poseidon}(\text{holderSecret}, \text{verifierId}, \text{nonce})$ is single-use and tied directly to the receiving verifier. Replaying the proof elsewhere will fail either the nonce check or the nullifier uniqueness check.
 
 ### 2. Credential Theft / Transfer Attacks
+=======
+>>>>>>> 042eaab379f62b3fa73af7c563269cfbcbd783d3
 * **Threat**: Alice gives her credential JSON file to Bob so Bob can pass an age check.
 * **Defense**: The credential contains leaf 6: $\text{holderCommit} = \text{Poseidon}(\text{holderSecret})$. To generate a valid Groth16 proof, the circuit demands the preimage `holderSecret`. Giving Bob the credential file without the secret renders it useless; giving Bob the secret transfers complete ownership of all Alice's credentials and nullifiers.
 
@@ -808,4 +811,4 @@ If you use this system or build upon its architecture in academic research or co
 
 ## 📄 License
 
-This project is open-source software licensed under the **ISC License**. Smart contracts are licensed under **GPL-3.0**.
+This project is open-source software.
