@@ -181,7 +181,7 @@ sequenceDiagram
  Wallet->>Gateway: GET /api/kyc/sanctions/proof/:identityKey (Fetch AML SMT Proof)
  Note over User, Wallet: STEP 4: On-Device Biometrics & Consent
  Wallet->>Wallet: WebCam Anti-Spoofing Liveness & Face Match Check
- Wallet->>User: Display Consent Dialog (Reveals Name+Uni; Proves Age>=18#59; Hides DOB+NID)
+ Wallet->>User: Display Consent Dialog (Reveals Name+Uni, Proves Age>=18, Hides DOB+NID)
  User->>Wallet: Approve Presentation
  Note over Wallet, Gateway: STEP 5: Zero-Knowledge Proving & Verification
  Wallet->>Wallet: Compute Groth16 Witness & Proof via snarkjs WASM
