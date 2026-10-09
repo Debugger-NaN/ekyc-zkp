@@ -14,6 +14,16 @@
       "name": "ANONYMOUS FRAUDSTER",
       "dob": 19821130,
       "reason": "Interpol Red Notice Mock"
+    },
+    {
+      "name": "John Doe",
+      "dob": 19900101,
+      "reason": "Sanctioned due to criminal activities"
+    },
+    {
+      "name": "Bill Gates",
+      "dob": 19551028,
+      "reason": "Sanctioned due to criminal activities"
     }
   ]
 }
